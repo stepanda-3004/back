@@ -351,3 +351,4 @@ FROM shops]
 2025-10-28 17:41:21,453 INFO app request complete: GET http://89.191.229.20:8000/ -> 200
 2025-10-28 17:43:55,106 INFO app request start: GET http://89.191.229.20:8000/
 2025-10-28 17:43:55,106 INFO app request complete: GET http://89.191.229.20:8000/ -> 200
+2025-11-02 14:54:33,433 INFO app Database initialized successfully.
