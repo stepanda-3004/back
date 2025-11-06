@@ -1,0 +1,53 @@
+2025-11-02 23:55:03.869 | INFO     | app.logger:dispatch:21 - request_started
+2025-11-02 23:55:03.870 | INFO     | app.logger:dispatch:26 - request_finished
+2025-11-02 23:55:06.798 | INFO     | app.logger:dispatch:21 - request_started
+2025-11-02 23:55:06.992 | INFO     | app.logger:dispatch:26 - request_finished
+2025-11-06 22:40:15.270 | INFO     | app.logger:dispatch:21 - request_started
+2025-11-06 22:40:15.274 | INFO     | app.logger:dispatch:26 - request_finished
+2025-11-06 22:40:29.292 | INFO     | app.logger:dispatch:21 - request_started
+2025-11-06 22:40:29.463 | INFO     | app.logger:dispatch:26 - request_finished
+2025-11-06 22:41:01.275 | INFO     | app.logger:dispatch:21 - request_started
+2025-11-06 22:41:01.276 | INFO     | app.logger:dispatch:26 - request_finished
+2025-11-06 22:41:01.306 | INFO     | app.logger:dispatch:21 - request_started
+2025-11-06 22:41:01.311 | INFO     | app.logger:dispatch:26 - request_finished
+2025-11-06 22:41:01.428 | INFO     | app.logger:dispatch:21 - request_started
+2025-11-06 22:41:01.429 | INFO     | app.logger:dispatch:26 - request_finished
+2025-11-06 22:49:48.781 | INFO     | app.logger:dispatch:21 - request_started
+2025-11-06 22:49:48.896 | INFO     | app.logger:dispatch:26 - request_finished
+2025-11-06 22:51:39.084 | INFO     | app.logger:dispatch:21 - request_started
+2025-11-06 22:51:39.088 | INFO     | app.logger:dispatch:26 - request_finished
+2025-11-06 22:51:54.250 | INFO     | app.logger:dispatch:21 - request_started
+2025-11-06 22:51:54.250 | INFO     | app.logger:dispatch:26 - request_finished
+2025-11-06 22:51:54.275 | INFO     | app.logger:dispatch:21 - request_started
+2025-11-06 22:51:54.276 | INFO     | app.logger:dispatch:26 - request_finished
+2025-11-06 22:51:55.310 | INFO     | app.logger:dispatch:21 - request_started
+2025-11-06 22:51:55.444 | INFO     | app.logger:dispatch:26 - request_finished
+2025-11-06 22:52:08.800 | INFO     | app.logger:dispatch:21 - request_started
+2025-11-06 22:52:08.801 | INFO     | app.logger:dispatch:26 - request_finished
+2025-11-06 22:52:25.473 | INFO     | app.logger:dispatch:21 - request_started
+2025-11-06 22:52:25.474 | INFO     | app.logger:dispatch:26 - request_finished
+2025-11-06 22:52:32.933 | INFO     | app.logger:dispatch:21 - request_started
+2025-11-06 22:52:32.934 | INFO     | app.logger:dispatch:26 - request_finished
+2025-11-06 22:52:59.121 | INFO     | app.logger:dispatch:21 - request_started
+2025-11-06 22:52:59.124 | INFO     | app.logger:dispatch:26 - request_finished
+2025-11-06 22:54:16.210 | INFO     | app.logger:dispatch:21 - request_started
+2025-11-06 22:54:16.211 | INFO     | app.logger:dispatch:26 - request_finished
+2025-11-06 22:54:16.229 | INFO     | app.logger:dispatch:21 - request_started
+2025-11-06 22:54:16.230 | INFO     | app.logger:dispatch:26 - request_finished
+2025-11-06 22:54:16.309 | INFO     | app.logger:dispatch:21 - request_started
+2025-11-06 22:54:16.311 | INFO     | app.logger:dispatch:26 - request_finished
+2025-11-06 22:54:33.840 | INFO     | app.logger:dispatch:21 - request_started
+2025-11-06 22:54:33.841 | WARNING  | app.routers.webhooks:receive_order_status:25 - [WEBHOOK] Invalid signature: None
+2025-11-06 22:54:33.842 | INFO     | app.logger:dispatch:26 - request_finished
+2025-11-06 22:56:45.518 | INFO     | app.logger:dispatch:21 - request_started
+2025-11-06 22:56:45.519 | WARNING  | app.routers.webhooks:receive_order_status:25 - [WEBHOOK] Invalid signature: None
+2025-11-06 22:56:45.520 | INFO     | app.logger:dispatch:26 - request_finished
+2025-11-06 23:02:28.406 | INFO     | app.logger:dispatch:21 - request_started
+2025-11-06 23:02:28.407 | WARNING  | app.routers.webhooks:receive_order_status:25 - [WEBHOOK] Invalid signature: None
+2025-11-06 23:02:28.408 | INFO     | app.logger:dispatch:26 - request_finished
+2025-11-06 23:04:56.067 | INFO     | app.logger:dispatch:21 - request_started
+2025-11-06 23:04:56.067 | INFO     | app.logger:dispatch:26 - request_finished
+2025-11-06 23:06:07.608 | INFO     | app.logger:dispatch:21 - request_started
+2025-11-06 23:06:07.610 | INFO     | app.routers.webhooks:receive_order_status:33 - [WEBHOOK] Received: order_updated, payload={'event': 'order_updated'}
+2025-11-06 23:06:07.723 | INFO     | app.routers.webhooks:receive_order_status:41 - [WEBHOOK] saved to DB in 114.50 ms
+2025-11-06 23:06:07.724 | INFO     | app.logger:dispatch:26 - request_finished

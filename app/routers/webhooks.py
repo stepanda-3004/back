@@ -4,10 +4,11 @@ from app.core.database import get_db
 from app.models.webhook_event import WebhookEvent
 from app.logger import logger
 from datetime import datetime
+import os
 
 # 🔐 Секрет, который будет использоваться для проверки подписи
 # (Ты можешь взять его из .env)
-SECRET_TOKEN = "supersecret"
+SECRET_TOKEN = os.getenv("WEBHOOK_SECRET")
 
 router = APIRouter(prefix="/webhook", tags=["Webhook"])
 
