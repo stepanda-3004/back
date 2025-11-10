@@ -7,7 +7,7 @@ class OrderItemOptionBase(BaseModel):
     price_delta: condecimal(ge=0)
 
 class OrderItemOptionCreate(OrderItemOptionBase):
-    pass
+    option_id: int
 
 class OrderItemOption(OrderItemOptionBase):
     id: str

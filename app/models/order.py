@@ -21,7 +21,7 @@ class Order(Base):
     currency = sa.Column(sa.String, nullable=True)
     subtotal = sa.Column(sa.Numeric)
     discount = sa.Column(sa.Numeric)
-    total_amount = sa.Column(sa.Numeric)
+    total_amount = sa.Column(Integer, nullable=False, default=0)
     note_text = sa.Column(sa.String)
     created_at = sa.Column(sa.DateTime(timezone=True))
     paid_at = sa.Column(sa.DateTime(timezone=True))

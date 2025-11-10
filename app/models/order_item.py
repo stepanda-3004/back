@@ -12,7 +12,7 @@ class OrderItem(Base):
     id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
     order_id = Column(UUID(as_uuid=True), ForeignKey("orders.id", ondelete="CASCADE"))
     menu_item_id = Column(UUID(as_uuid=True), ForeignKey("menu_items.id", ondelete="SET NULL"))
-    name_snapshot = Column(Text)
+    name_snapshot = Column(String, nullable=False)
     unit_price = Column(Float)
     qty = Column(Integer)
     line_total = Column(Float)

@@ -35,11 +35,7 @@ async def get_order(db: AsyncSession, order_id):
     return await get_by_id(db, Order, order_id)
 
 async def create_order(db: AsyncSession, order_in: OrderCreate):
-    """
-    Creates Order, then OrderItems and Payments in same transaction.
-    order_in.order_items: list of OrderItemCreate
-    order_in.payments: list of PaymentCreate
-    """
+
     try:
         # create main order
         order_data = order_in.model_dump(exclude={"order_items", "payments"})
