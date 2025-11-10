@@ -1,14 +1,22 @@
 from fastapi import APIRouter, Request, Depends, HTTPException
 from sqlalchemy.ext.asyncio import AsyncSession
 from app.core.database import get_db
+from app.core.config import get_settings, Settings
 from app.models.webhook_event import WebhookEvent
 from app.logger import logger
 from datetime import datetime
 import os
+import hmac
+import hashlib
 
 # 🔐 Секрет, который будет использоваться для проверки подписи
 # (Ты можешь взять его из .env)
 SECRET_TOKEN = os.getenv("WEBHOOK_SECRET")
+
+
+def verify_signature(body: bytes, signature: str, secret: str) -> bool:
+    expected = hmac.new(secret.encode(), body, hashlib.sha256).hexdigest()
+    return hmac.compare_digest(expected, signature)
 
 router = APIRouter(prefix="/webhook", tags=["Webhook"])
 
@@ -52,3 +60,28 @@ async def receive_order_status(
 async def list_events(db: AsyncSession = Depends(get_db)):
     result = await db.execute(select(WebhookEvent).order_by(WebhookEvent.received_at.desc()))
     return result.scalars().all()
+
+@router.post("/payments", status_code=200)
+async def payment_webhook(
+    request: Request,
+    db: AsyncSession = Depends(get_db),
+    settings: Settings = Depends(get_settings),
+):
+    body = await request.body()
+    signature = request.headers.get("X-Signature")
+
+    if not verify_signature(body, signature, settings.PAYMENT_WEBHOOK_SECRET):
+        raise HTTPException(status_code=401, detail="Invalid signature")
+
+    payload = await request.json()
+
+    # обработка логики success/failed
+    payment_id = payload.get("payment_id")
+    status = payload.get("status")
+
+    if status == "paid":
+        await mark_order_paid(db, payment_id)
+    elif status == "failed":
+        await mark_order_failed(db, payment_id)
+
+    return {"status": "OK"}
