@@ -39,3 +39,17 @@ class OrderRead(Order):
 
     class Config:
         orm_mode = True
+
+class OrderSlotUpdate(BaseModel):
+    slot_id: UUID
+
+class AlternativeSlot(BaseModel):
+    slot_id: UUID
+    start: str  # ISO
+    end: str
+    remaining_capacity: Optional[int]  # None -> unlimited
+
+class SlotFullError(BaseModel):
+    error: str
+    code: str
+    alternatives: List[AlternativeSlot] = []
