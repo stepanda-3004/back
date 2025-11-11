@@ -1,0 +1,139 @@
+[
+	{
+		"shop_name": "Eastoria",
+		"address": "ул. Архитектора Щусева, 2, корп. 3",
+		"lat": "55.700613",
+		"lng": "37.633634",
+		"tz": "Europe/Moscow",
+		"open_hours": {
+			"mon-fri": "11:00-23:00",
+			"sat-sun": "11:00-23:00"
+		},
+		"is_active": true,
+		"id": "be5f0366-76ac-4080-b3c8-4de957dc9923",
+		"created_at": null
+	},
+	{
+		"shop_name": "Surf Coffee",
+		"address": "ул. Архитектора Щусева, 2, корп. 1",
+		"lat": "55.699908",
+		"lng": "37.635296",
+		"tz": "Europe/Moscow",
+		"open_hours": {
+			"mon-fri": "08:00-22:00",
+			"sat-sun": "09:00-22:00"
+		},
+		"is_active": true,
+		"id": "61dc204f-d0d4-40aa-9bf1-7bdcda642a15",
+		"created_at": null
+	},
+	{
+		"shop_name": "Человек и кофе",
+		"address": "наб. Марка Шагала, 1, корп. 2",
+		"lat": "55.699451",
+		"lng": "37.631615",
+		"tz": "Europe/Moscow",
+		"open_hours": {
+			"mon-sun": "08:00-20:00"
+		},
+		"is_active": true,
+		"id": "793c5353-0a63-47f1-a1cd-28b5ee3ac843",
+		"created_at": null
+	},
+	{
+		"shop_name": "bez imeni",
+		"address": "ул. Пушкина, 15",
+		"lat": null,
+		"lng": null,
+		"tz": "Europe/Moscow",
+		"open_hours": {
+			"mon-fri": "08:00-19:00",
+			"sat": "09:00-17:00"
+		},
+		"is_active": true,
+		"id": "d30b0cf3-179c-4fa8-9163-f10eb45beefa",
+		"created_at": null
+	},
+	{
+		"shop_name": "Beze",
+		"address": "ул. Архитектора Щусева, 2, корп. 2",
+		"lat": "55.699378",
+		"lng": "37.635072",
+		"tz": "Europe/Moscow",
+		"open_hours": {
+			"mon-fri": "08:00-22:00",
+			"sat-sun": "09:00-22:00"
+		},
+		"is_active": true,
+		"id": "86f2aa15-9941-4a03-85f3-e5e308c9e8ce",
+		"created_at": null
+	},
+	{
+		"shop_name": "Рожь",
+		"address": "ул. Архитектора Щусева, 2, корп. 2",
+		"lat": "55.699111",
+		"lng": "37.634721",
+		"tz": "Europe/Moscow",
+		"open_hours": {
+			"mon-fri": "08:00-21:00",
+			"sat-sun": "09:00-21:00"
+		},
+		"is_active": true,
+		"id": "86531cc9-01cd-4356-a9d1-57578f890341",
+		"created_at": null
+	},
+	{
+		"shop_name": "Дринкит",
+		"address": "ул. Архитектора Щусева, 4, корп. 1",
+		"lat": "55.698573",
+		"lng": "37.633611",
+		"tz": "Europe/Moscow",
+		"open_hours": {
+			"mon-fri": "07:30-22:00",
+			"sat-sun": "08:30-22:00"
+		},
+		"is_active": true,
+		"id": "f95376ef-4024-463c-8cb4-17040cac2e3a",
+		"created_at": null
+	},
+	{
+		"shop_name": "Ромбаба",
+		"address": "ул. Архитектора Щусева, 3",
+		"lat": "55.699235",
+		"lng": "37.635960",
+		"tz": "Europe/Moscow",
+		"open_hours": {
+			"mon-sun": "08:00-21:30"
+		},
+		"is_active": true,
+		"id": "a6ef9197-fa29-44f0-a896-57d8ac790df8",
+		"created_at": null
+	},
+	{
+		"shop_name": "Laven Coffee",
+		"address": "ул. Архитектора Щусева, 3",
+		"lat": "55.698379",
+		"lng": "37.636193",
+		"tz": "Europe/Moscow",
+		"open_hours": {
+			"mon-sun": "10:00-22:00"
+		},
+		"is_active": true,
+		"id": "21fcc8dc-10bf-4181-8555-3f87f7a36d4f",
+		"created_at": null
+	},
+	{
+		"shop_name": "Piatto",
+		"address": "ул. Архитектора Щусева, 5, корп. 1",
+		"lat": "55.697347",
+		"lng": "37.635590",
+		"tz": "Europe/Moscow",
+		"open_hours": {
+			"mon-fri": "08:00-20:00",
+			"sat-sun": "09:00-21:00"
+		},
+		"is_active": true,
+		"id": "7fe36302-9fe5-497b-9605-473a30bd45dd",
+		"created_at": null
+	}
+]
