@@ -7,7 +7,7 @@ from app.schemas.user import UserCreate, UserRead, UserUpdate
 from app.crud.user import list_users, get_user, create_user, update_user, delete_user
 from app.core.database import get_db
 from typing import List
-
+from app.models import User as UserModel
 from app.core.database import get_db
 from app import crud, schemas
 
@@ -47,6 +47,25 @@ async def route_delete_user(user_id: UUID, db: AsyncSession = Depends(get_db)):
         raise HTTPException(404, "User not found")
     deleted = await delete_user(db, user)
     return deleted
+
+@router.patch("/{user_id}/city", response_model=UserRead)
+async def update_city(
+    user_id: UUID,
+    data: UserUpdate,
+    db: AsyncSession = Depends(get_db),
+):
+    user = await get_user(db, user_id)
+    if not user:
+        raise HTTPException(status_code=404, detail="User not found")
+
+    if data.city is None:
+        raise HTTPException(status_code=400, detail="City is required")
+
+    user.city = data.city
+    await db.commit()
+    await db.refresh(user)
+
+    return user
 
 # === SESSIONS ===
 @router.post("/{user_id}/sessions", response_model=schemas.Session)

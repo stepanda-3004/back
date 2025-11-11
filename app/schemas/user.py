@@ -8,6 +8,7 @@ class User(BaseModel):
     phone: constr(strip_whitespace=True, min_length=5) | None = None
     email: Optional[EmailStr] = None
     display_name: Optional[constr(max_length=100)] = None
+    city: str | None = None
 
 class UserCreate(User):
     pass

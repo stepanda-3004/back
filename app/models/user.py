@@ -14,6 +14,7 @@ class User(Base):
     phone = sa.Column(sa.String, nullable=True)
     email = sa.Column(sa.String, nullable=True)
     display_name = sa.Column(sa.String, nullable=True)
+    city = sa.Column(sa.String, nullable=True)
     created_at = sa.Column(sa.DateTime(timezone=True))
     favorites = relationship("UserFavorite", back_populates="user", cascade="all, delete-orphan")
     device_tokens = relationship("DeviceToken", back_populates="user", cascade="all, delete-orphan")
